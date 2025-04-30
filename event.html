@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événements et Conférences</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+    
+    <div class="principale">
+        <div class="logo">
+            <a href="#">Afri<span>F</span></a>
+        </div>
+    <ul>
+        <li class="active">
+            <a href="index.html">Accueil</a>
+        </li>
+        <li>
+            <a href="er.html">Espace Ressources </a>
+        </li>
+        <li>
+            <a href="opporf.html">Opportunités de Financement </a>
+        </li>
+        <li>
+            <a href="reseau.html">Communauté et réseau</a>
+        </li>
+        
+        <li>
+            <a href="event.html">Événements et conférences</a>
+        </li>
+    </ul>
+</div>
+<br><br><br>
+
+    <div class="container">
+        <h2>Événements et Conférences</h2>
+<br><br>
+        <h3>Événements à venir</h3>
+        <br>
+        <div id="events-list">
+            <div class="event">
+                <h3>Forum des Entrepreneuses Africaines</h3>
+                <p><strong>Date:</strong> 15 avril 2025</p>
+                <p><strong>Lieu:</strong> Dakar, Sénégal</p>
+                <p>Un événement dédié aux femmes entrepreneures en Afrique.</p>
+            </div>
+            <div class="event">
+                <h3>Sommet de l'Innovation Féminine</h3>
+                <p><strong>Date:</strong> 20 juin 2025</p>
+                <p><strong>Lieu:</strong> Abidjan, Côte d'Ivoire</p>
+                <p>Un sommet réunissant des femmes leaders et entrepreneures pour partager des innovations et des stratégies de croissance.</p>
+            </div>
+        </div>
+
+        <h3>Proposer un événement</h3>
+        <div class="form-container">
+            <input type="text" id="event-name" placeholder="Nom de l'événement" required>
+            <input type="date" id="event-date" required>
+            <input type="text" id="event-location" placeholder="Lieu" required>
+            <textarea id="event-description" placeholder="Description"></textarea>
+            <button onclick="addEvent()">Ajouter l'événement</button>
+        </div>
+    </div>
+    
+    <script>
+        function addEvent() {
+            let name = document.getElementById("event-name").value;
+            let date = document.getElementById("event-date").value;
+            let location = document.getElementById("event-location").value;
+            let description = document.getElementById("event-description").value;
+
+            if (name && date && location) {
+                let eventList = document.getElementById("events-list");
+                let eventDiv = document.createElement("div");
+                eventDiv.classList.add("event");
+                eventDiv.innerHTML = `<h3>${name}</h3><p><strong>Date:</strong> ${date}</p><p><strong>Lieu:</strong> ${location}</p><p>${description}</p>`;
+                eventList.appendChild(eventDiv);
+
+                document.getElementById("event-name").value = "";
+                document.getElementById("event-date").value = "";
+                document.getElementById("event-location").value = "";
+                document.getElementById("event-description").value = "";
+            } else {
+                alert("Veuillez remplir tous les champs requis.");
+            }
+        }
+    </script>
+</body>
+</html>

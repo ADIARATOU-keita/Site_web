@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./images/woman.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.logo a{
+    color: #ffff;
+    padding: 0px 20px;
+    border: 1px solid #ffff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    text-shadow: rgba(0, 0, 0, 0.7);
+}
+.logo span{
+    color: rgb(238, 56, 11);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.principale ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding:5px 10px;
+    border: 1px solid transparent;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background: #fff;
+    color: black;
+}
+ul li.active a{
+    background: #fff;
+    color: black;
+}
+.principale{
+max-width: 114rem;
+margin: 0 auto;
+}
+.titre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.titre h1{
+    color: #fff;
+    font-size: 20px;
+}
+.bouton{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bouton a{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+padding: 10px 20px;
+}
+.btn{
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color:#fff;
+    color: black;
+}
+.buttons{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btns{
+    transition: 0.6s ease;
+}
+.btns:hover{
+    background-color:#fff;
+    color: black;
+}
+.buttons a{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+padding: 10px 20px;
+}
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.resource {
+    color: black;
+    
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden; /* Empêche le débordement du contenu */
+word-wrap: break-word; /* Coupe les mots longs pour éviter qu'ils dépassent */
+min-height: 250px; /* Assure que toutes les cartes aient une hauteur uniforme */
+display: flex;
+flex-direction: column;
+justify-content: space-between; /* Garde une bonne répartition du contenu */
+}
+
+.resource ul {
+    padding: 0;
+    margin: 10px 0;
+    list-style-type: none;
+}
+.resource ul li {
+    margin: 8px 0;
+}
+
+.resource ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    display: block; /* Permet aux liens de ne pas dépasser */
+}
+
+.resource ul li a:hover {
+    text-decoration: underline;
+}
+.resource ul li a { 
+    text-decoration: none;
+    color:black;
+    padding:5px 10px;
+    border: 1px solid transparent;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+    text-align: center;
+}
+
+ ressource ul li.active a{
+    background: #fff;
+    color: black;
+}
+h2 {
+    font-size: 20px;
+    color: white
+    text-align: center;
+}
+h1 {
+    margin: 20px;
+    padding: 20px;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+
+p {
+    margin: 20px;
+    font-size: 18px;
+    margin-top: 10px;
+    color: white;
+}
+main {
+    padding: 20px;
+  }
+  
+  section {
+    background-color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  /* Assurer que chaque section soit suffisamment flexible */
+  min-height: 350px; /* Minimum height to make sections appear bigger */
+  }
+  
+  section h2 {
+    color: #004d40;
+  }
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  section p{
+    color: black;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    color:black;
+    text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+  }
+  
+  nav ul li a:hover {
+    color: black;
+   text-decoration: underline;
+  }
+  
+#moi{
+    text-align: center;
+}

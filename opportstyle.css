@@ -1,0 +1,98 @@
+.logo a{
+  color: #ffff;
+  padding: 0px 20px;
+  border: 1px solid #ffff;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 900;
+  text-shadow: rgba(0, 0, 0, 0.7);
+}
+.logo span{
+  color: rgb(238, 56, 11);
+  font-weight: bold;
+  font-size: 2rem;
+}
+.principale ul{
+  list-style: none;
+  float: right;
+  display: flex;
+  margin-top: 20px;
+}
+ .principale ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding:5px 10px;
+  border: 1px solid transparent;
+  margin: 10px;
+  font-weight: 500;
+  transition: 0.6s ease;
+}
+ul li a{
+  text-decoration: none;
+  color: black;
+  padding:5px 10px;
+  border: 1px solid transparent;
+  margin: 10px;
+  font-weight: 500;
+  transition: 0.6s ease;
+}
+.principale li a:hover{
+  background: #fff;
+  color: black;
+}
+.principale li.active a{
+  background: #fff;
+  color: black;
+}
+.principale{
+max-width: 114rem;
+margin: 0 auto;
+}
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    color: #004d40;
+  }
+  
+  ul {
+    line-height: 1.6;
+  }
+  

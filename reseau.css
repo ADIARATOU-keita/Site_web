@@ -1,0 +1,235 @@
+/* Réinitialisation des marges et padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.logo a{
+    color: #ffff;
+    padding: 0px 20px;
+    border: 1px solid #ffff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    text-shadow: rgba(0, 0, 0, 0.7);
+}
+.logo span{
+    color: rgb(238, 56, 11);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.principale{
+    max-width: 114rem;
+    margin: 0 auto;
+    }
+    .principale ul{
+        list-style: none;
+        float: right;
+        display: flex;
+        margin-top: 20px;
+    }
+    ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding:5px 10px;
+        border: 1px solid transparent;
+        margin: 10px;
+        font-weight: 500;
+        transition: 0.6s ease;
+    }
+    ul li a:hover{
+        background: #fff;
+        color: black;
+    }
+    ul li.active a{
+        background: #fff;
+        color: black;
+    }
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./images/woman.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: repeat;
+}
+   
+/* Style général du body */
+body {
+    font-family: century;
+
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 50px; /* Pour éviter que le footer soit collé à la page */
+}
+
+/* Conteneur principal */
+section {
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* En-tête d'introduction */
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color:white;
+}
+
+/* Témoignages */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial {
+    max-width: 800px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.testimonial h2{
+    color: white;
+}
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Liste des événements */
+.events ul {
+    list-style: none;
+    padding: 0;
+}
+
+.events li {
+    margin-bottom: 10px;
+}
+
+.events a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.events a:hover {
+    text-decoration: underline;
+}
+
+/* Forum de discussion */
+.forum ul {
+    list-style: none;
+    padding: 0;
+}
+
+.forum li {
+    margin-bottom: 10px;
+}
+
+.forum a {
+    color: #4CAF50;
+    text-align: left;
+}
+
+/* Ressources utiles */
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources li {
+    margin-bottom: 10px;
+}
+
+.resources a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Mentorat */
+.mentorship button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.mentorship button a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+/* Appel à l'action */
+.cta {
+    background-color: burlywood;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.cta button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cta button a {
+    color: #333;
+    text-decoration: none;
+}
+
+.cta button:hover {
+    background-color:#333;
+}
+
+/* Partenaires */
+.partners {
+    text-align: center;
+}
+
+.partner-logos img {
+    margin: 0 15px;
+    width: 120px;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+ul{
+    color: black;
+    text-align: left;
+}
